@@ -1,0 +1,263 @@
+[
+    {
+      "total": 4,
+      "books": [
+        {
+          "title": "Linear Algebra and Its Applications [rental Edition]",
+          "author": "David C Lay; Steven R Lay; Judi J McDonald",
+          "md5": "b647df8ff161740d1cb2a1c4d6ea5e26",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/e9404a7ad32afd357ff25680236b7d19bd0931137c174303f855c861e7720836.jpg",
+          "size": "123.5MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "2020",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Linear Algebra and Its Applications: Sixth Edition: Instructor's Solutions Manual",
+          "author": "David C. Lay, Steven R. Lay, Judi J. McDonald",
+          "md5": "65217de6abcb363c92482e6b639e2c45",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/userbooks/1f60d39fece63739fae2761fcae38e0f52d7c9cc5ed7db9b9ecf38690e6c31a5.jpg",
+          "size": "5.0MB",
+          "genre": "Unknown",
+          "format": "pdf",
+          "year": "2021",
+          "imgFallbackColor": null,
+          "sources": ["zlib"]
+        },
+        {
+          "title": "Linear Algebra and Its Applications [rental Edition]",
+          "author": "David C Lay; Steven R Lay; Judi J McDonald",
+          "md5": "5983f8697728850b0aed4df54b720667",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/e9404a7ad32afd357ff25680236b7d19bd0931137c174303f855c861e7720836.jpg",
+          "size": "123.5MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "2020",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Linear Algebra and Its Applications",
+          "author": "David Lay",
+          "md5": "9ffb0861c76b5287cae48329c195b9b8",
+          "imgUrl": "https://libgen.is/covers/4149000/9ffb0861c76b5287cae48329c195b9b8-g.jpg",
+          "size": "42.8MB",
+          "genre": "Non-Fiction",
+          "format": "epub",
+          "year": "2021",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc"]
+        }
+      ]
+    },
+    {
+      "total": 7,
+      "books": [
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "72bee0c441da9b5ccd144fd3980e15e3",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/5f2ac2409289e7c242cc1890fb21303aee9e970287eab5acba13f29b8d9d1bcc.jpg",
+          "size": "4.0MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "3fcd807dbcdbd47c83b2fcd89d65cd8d",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/ba91309e9ec2c4211a71902b8e475b4c19a53da4f57275d149de20e85aadad96.jpg",
+          "size": "150.6MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "64d07f61bd71e1bc6a1d74f51d440c82",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/ba91309e9ec2c4211a71902b8e475b4c19a53da4f57275d149de20e85aadad96.jpg",
+          "size": "64.0MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C (OCR-ed 1.0)",
+          "author": "Kenneth Reek",
+          "md5": "03247f210eafef711997f089cb4b5c86",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/ba91309e9ec2c4211a71902b8e475b4c19a53da4f57275d149de20e85aadad96.jpg",
+          "size": "11.8MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "558cb2fcd1e14ccfb648793d7f3f5e74",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/aeea4581c7735436c0df066f5347fc7c0fe725f6693516f042dcabbf4ebfd6d2.jpg",
+          "size": "5.3MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "1638baf666e9964f7f2a1336ef88bfb6",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/ba91309e9ec2c4211a71902b8e475b4c19a53da4f57275d149de20e85aadad96.jpg",
+          "size": "3.7MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "Pointers on C",
+          "author": "Kenneth Reek",
+          "md5": "6e4c8476842591484f746fe46e47834b",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/83d087b36aaef3a55961c942c1d3f6a2987bc581097256c92d5484edd7ec367d.jpg",
+          "size": "2.7MB",
+          "genre": "Non-Fiction",
+          "format": "pdf",
+          "year": "1997",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        }
+      ]
+    },
+    {
+      "total": 7,
+      "books": [
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Ari Shavit [Shavit, Ari]",
+          "md5": "ad7a5499498bd70d5fa24cf0a7e21a0f",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/userbooks/adf2d8b4c60527cbec9115ade881cb90c1678ab9664f359b14f7f6aeebb6bf04.jpg",
+          "size": "7.0MB",
+          "genre": "Fiction",
+          "format": "epub",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "zlib"]
+        },
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Ari Shavit",
+          "md5": "37f1a090f8ace90b648b9fb04be22452",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/ef22e2d0accfec15332ad2f72a6613c88b2efd701cc71971c0efbd31ad882ff3.jpg",
+          "size": "5.1MB",
+          "genre": "Non-Fiction",
+          "format": "epub",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Ari Shavit",
+          "md5": "2edfc31793f5b2102f1c117868193919",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/769aaa2f2cc05ca7739416a8af4d406690775bdffbfe9916e2822aee2ce0e1c0.jpg",
+          "size": "5.1MB",
+          "genre": "Non-Fiction",
+          "format": "epub",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Shavit, Ari",
+          "md5": "23ff4b49fa4c7769ecf341f030eb03ba",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/foreignfiction/769aaa2f2cc05ca7739416a8af4d406690775bdffbfe9916e2822aee2ce0e1c0.jpg",
+          "size": "2.0MB",
+          "genre": "Fiction",
+          "format": "epub",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "zlib"]
+        },
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Shavit, Ari",
+          "md5": "d4b3aa9ffc5661487f41a51c725f1deb",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/foreignfiction/769aaa2f2cc05ca7739416a8af4d406690775bdffbfe9916e2822aee2ce0e1c0.jpg",
+          "size": "2.2MB",
+          "genre": "Fiction",
+          "format": "azw3",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "zlib"]
+        },
+        {
+          "title": "My promised land: the triumph and tragedy of Israel",
+          "author": "Boehmer, Paul;Books on Tape, Inc.;Shavit, Ari",
+          "md5": "b6ced265e268ea785cddff02230872b5",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/86a8977f05f58cbe33e4fbfa6236afe9174b438f5ecbd1480ca4228d2245a8d9.jpg",
+          "size": "5.1MB",
+          "genre": "Non-Fiction",
+          "format": "epub",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "upload", "zlib"]
+        },
+        {
+          "title": "My Promised Land: The Triumph and Tragedy of Israel",
+          "author": "Boehmer, Paul;Books on Tape, Inc.;Shavit, Ari",
+          "md5": "852de93cbb5ee9b82214644f31094738",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/769aaa2f2cc05ca7739416a8af4d406690775bdffbfe9916e2822aee2ce0e1c0.jpg",
+          "size": "2.0MB",
+          "genre": "Non-Fiction",
+          "format": "azw3",
+          "year": "2013",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "upload", "zlib"]
+        }
+      ]
+    },
+    {
+      "total": 2,
+      "books": [
+        {
+          "title": "The Gates of Gaza: A Story of Betrayal, Survival, and Hope in Israel’s Borderlands",
+          "author": "Amir Tibon",
+          "md5": "db6c5ed9a73262f8e1dca7d314dfb36b",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/9ff2ac81807f95fe505c9ff16fc63fa0cf2ff56992a4a4e920b2a73e86dbd30c.jpg",
+          "size": "1.3MB",
+          "genre": "Fiction",
+          "format": "epub",
+          "year": "2023",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        },
+        {
+          "title": "The Gates of Gaza: A Story of Betrayal, Survival, and Hope in Israel’s Borderlands",
+          "author": "Amir Tibon",
+          "md5": "c61f8c45cc7422f0ee37874e4b2d8d6f",
+          "imgUrl": "https://s3proxy.cdn-zlib.sk//covers299/collections/genesis/2fe59d0f48bff79817ca935342d543cb2ff8ea0d8397c27f34c35d4f0087e3c0.jpg",
+          "size": "3.7MB",
+          "genre": "Fiction",
+          "format": "epub",
+          "year": "2023",
+          "imgFallbackColor": null,
+          "sources": ["lgli", "lgrs", "nexusstc", "zlib"]
+        }
+      ]
+    }
+  ]
+  
