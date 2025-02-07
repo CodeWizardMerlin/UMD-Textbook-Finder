@@ -89,18 +89,31 @@ for i in all_values:
     if len((i.get_attribute("innerText"))) == 13 and i.get_attribute("innerText").isdigit():
         ISBNs.add(i.get_attribute("innerText"))
 
-print(ISBNs)
-
-#https://www.adobe.com/uk/acrobat/online/convert-pdf.html
-
-url = "https://annas-archive-api.p.rapidapi.com/search"
+# api calls
+mobi_file = False
+search_url = "https://annas-archive-api.p.rapidapi.com/search"
+download_url = "https://annas-archive-api.p.rapidapi.com/download"
 api_key = json.load(open("key.json", "r"))["private_key"]
 headers = {
     "x-rapidapi-key": api_key,
     "x-rapidapi-host": "annas-archive-api.p.rapidapi.com"
 }
 for isbn in ISBNs:
-    querystring = {"q":isbn,"skip":"0","limit":"10","ext":"pdf, epub","sort":"mostRelevant"}
-    response = requests.get(url, headers=headers, params=querystring)
+    querystring_find = {"q":isbn,"skip":"0","limit":"1","ext":"pdf, epub, mobi"}
+    response = requests.get(search_url, headers=headers, params=querystring_find)
 
-    print(response.json())
+    
+
+    print("Title:" + response.json()["title"] + "-" + response.json()["year"])
+    print("Author(s):" + response.json()["author"])
+    print(response.json()["format"] + "-" + response.json()["size"])
+    if (response.json()["format"] == "mobi"):
+        mobi_file = True
+
+    querystring_download = {"md5":response.json()["md5"]}
+    response = requests.get(download_url, headers=headers, params=querystring_download)
+    print("Link:" + response.json()["0"])
+    print()
+
+if (mobi_file):
+    print("Convert mobi filetype to pdf here: https://www.adobe.com/uk/acrobat/online/convert-pdf.html")
