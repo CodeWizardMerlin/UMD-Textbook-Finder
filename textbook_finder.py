@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
+import requests
+import json
 
 enter = "u'\ue007'"
 parse_start = "courseData="
@@ -8,7 +10,7 @@ parse_end = "&utm_source"
 
 print("Paste URL")
 user_url = "https://umcp.bncollege.com/course-material-listing-page?utm_campaign=storeId=15551_langId=-1_courseData=CMSC_216_0401_202501%7CCMSC_250_0303_202501%7CHIST_187_0102_202501%7CMATH_240_0332_202501&utm_source=wcs&utm_medium=registration_integration"
-user_url = input()
+#user_url = input()
 
 parsed_url = user_url[user_url.index(parse_start) + len(parse_start) : user_url.index(parse_end)]
 classes = parsed_url.split("%7C")
@@ -81,8 +83,24 @@ driver.find_element(By.CSS_SELECTOR, "div.bned-campus-form:nth-child(1) > div:nt
 sleep(2.5) #webpage load
 
 # ISBN 13
-list = driver.find_elements(By.CLASS_NAME, "value")
-list2 = set()
-for i in list:
+all_values = driver.find_elements(By.CLASS_NAME, "value")
+ISBNs = set()
+for i in all_values:
     if len((i.get_attribute("innerText"))) == 13 and i.get_attribute("innerText").isdigit():
-        list2.add(i.get_attribute("innerText"))
+        ISBNs.add(i.get_attribute("innerText"))
+
+print(ISBNs)
+
+#https://www.adobe.com/uk/acrobat/online/convert-pdf.html
+
+url = "https://annas-archive-api.p.rapidapi.com/search"
+api_key = json.load(open("key.json", "r"))["private_key"]
+headers = {
+    "x-rapidapi-key": api_key,
+    "x-rapidapi-host": "annas-archive-api.p.rapidapi.com"
+}
+for isbn in ISBNs:
+    querystring = {"q":isbn,"skip":"0","limit":"10","ext":"pdf, epub","sort":"mostRelevant"}
+    response = requests.get(url, headers=headers, params=querystring)
+
+    print(response.json())
