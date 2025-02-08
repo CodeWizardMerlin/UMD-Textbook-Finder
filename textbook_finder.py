@@ -1,11 +1,11 @@
-from isbnF import ISBN
+import webscrape
 import requests
 import json
 
 print("Paste URL")
 user_url = "https://umcp.bncollege.com/course-material-listing-page?utm_campaign=storeId=15551_langId=-1_courseData=CMSC_216_0401_202501%7CCMSC_250_0303_202501%7CHIST_187_0102_202501%7CMATH_240_0332_202501&utm_source=wcs&utm_medium=registration_integration"
 #user_url = input()
-ISBNs = ISBN.get(user_url)
+ISBNs = webscrape.find_isbn(user_url)
 
 # api calls
 mobi_file = False

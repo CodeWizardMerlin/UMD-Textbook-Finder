@@ -2,8 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
-class ISBN:
-    def get(user_url, hidden = False, delay = .2):
+def find_isbn(user_url, hidden = False, delay = .2):
         enter = "u'\ue007'"
         parse_start = "courseData="
         parse_end = "&utm_source"
@@ -93,4 +92,3 @@ class ISBN:
 
         driver.quit()
         return ISBNs
-    
