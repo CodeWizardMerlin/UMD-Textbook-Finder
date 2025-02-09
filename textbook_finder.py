@@ -20,8 +20,6 @@ for isbn in ISBNs:
     querystring_find = {"q":isbn,"skip":"0","limit":"1","ext":"pdf, epub, mobi"}
     response = requests.get(search_url, headers=headers, params=querystring_find)
 
-    
-
     print("Title:" + response.json()["title"] + "-" + response.json()["year"])
     print("Author(s):" + response.json()["author"])
     print(response.json()["format"] + "-" + response.json()["size"])
