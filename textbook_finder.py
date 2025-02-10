@@ -18,18 +18,21 @@ headers = {
 }
 for isbn in ISBNs:
     querystring_find = {"q":isbn,"skip":"0","limit":"1","ext":"pdf, epub, mobi"}
-    response = requests.get(search_url, headers=headers, params=querystring_find)
+    #response = (requests.get(search_url, headers=headers, params=querystring_find))
+    response = open("request.json", "r")
+    data = json.load(response)["books"]
+    print(data)
 
-    print("Title:" + response.json()["title"] + "-" + response.json()["year"])
+    print("Title:" + data["title"] + "-" + data["year"])
     print("Author(s):" + response.json()["author"])
     print(response.json()["format"] + "-" + response.json()["size"])
     if (response.json()["format"] == "mobi"):
         mobi_file = True
 
-    querystring_download = {"md5":response.json()["md5"]}
-    response = requests.get(download_url, headers=headers, params=querystring_download)
-    print("Link:" + response.json()["0"])
-    print()
+    #querystring_download = {"md5":response.json()["md5"]}
+    #response = requests.get(download_url, headers=headers, params=querystring_download)
+    #print("Link:" + response.json()["0"])
+    #print()
 
 if (mobi_file):
     print("Convert mobi filetype to pdf here: https://www.adobe.com/uk/acrobat/online/convert-pdf.html")
