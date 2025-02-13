@@ -1,10 +1,10 @@
+from libgen_api_enhanced import LibgenSearch
 import webscrape
 import requests
 import json
 
 print("Paste URL")
-user_url = "https://umcp.bncollege.com/course-material-listing-page?utm_campaign=storeId=15551_langId=-1_courseData=CMSC_216_0401_202501%7CCMSC_250_0303_202501%7CHIST_187_0102_202501%7CMATH_240_0332_202501&utm_source=wcs&utm_medium=registration_integration"
-#user_url = input()
+user_url = input()
 ISBNs = webscrape.find_isbn(user_url)
 
 # api calls
@@ -17,22 +17,19 @@ headers = {
     "x-rapidapi-host": "annas-archive-api.p.rapidapi.com"
 }
 for isbn in ISBNs:
-    querystring_find = {"q":isbn,"skip":"0","limit":"1","ext":"pdf, epub, mobi"}
-    #response = (requests.get(search_url, headers=headers, params=querystring_find))
-    response = open("request.json", "r")
-    data = json.load(response)["books"]
-    print(data)
+    querystring_find = {"q":isbn,"skip":"0","limit":"2","ext":"pdf, epub, mobi","source":"libgenLi, libgenRs"}
+    response = (requests.get(search_url, headers=headers, params=querystring_find))
+    data = json.load(response)[0]["books"][0]
 
-    print("Title:" + data["title"] + "-" + data["year"])
-    print("Author(s):" + response.json()["author"])
-    print(response.json()["format"] + "-" + response.json()["size"])
-    if (response.json()["format"] == "mobi"):
+    print(data["title"] + " (" + data["size"] + ")" + " (" + data["year"] + ")")
+    print("By: " + data["author"])
+    if (data["format"] == "mobi"):
         mobi_file = True
 
-    #querystring_download = {"md5":response.json()["md5"]}
-    #response = requests.get(download_url, headers=headers, params=querystring_download)
-    #print("Link:" + response.json()["0"])
-    #print()
+    s = LibgenSearch()
+    results = s.search_title(data["title"])
+    print("Direct Download Link: " + results[0]["Direct_Download_Link"])
+    print()
 
 if (mobi_file):
     print("Convert mobi filetype to pdf here: https://www.adobe.com/uk/acrobat/online/convert-pdf.html")
